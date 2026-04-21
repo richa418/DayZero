@@ -1,6 +1,6 @@
 import requests
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "your api key"
 
 def ask_ai(prompt):
     url = "https://openrouter.ai/api/v1/chat/completions"
