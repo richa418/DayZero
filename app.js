@@ -233,7 +233,7 @@ function initModal() {
   const phone = document.getElementById("reg-phone").value;
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/request-demo", {
+    const res = await fetch("https://dayzero-1.onrender.com/request-demo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -364,8 +364,8 @@ function initAuthModal() {
   const password = document.getElementById("auth-password").value;
 
   const url = isLogin
-    ? "http://127.0.0.1:5000/login"
-    : "http://127.0.0.1:5000/signup";
+    ? "https://dayzero-1.onrender.com/login"
+    : "https://dayzero-1.onrender.com/signup";
 
   const body = isLogin
     ? { email, password }
