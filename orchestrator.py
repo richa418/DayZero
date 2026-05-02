@@ -12,3 +12,7 @@ def run_simulation(user_input):
     responses["pm"] = pm_feedback(user_input)
 
     return responses
+
+# When calling Gemini
+user_role = "Frontend" # This will come from your frontend request
+prompt = f"You are an AI Manager. I am a {user_role} intern on my first day. Give me my first task."
