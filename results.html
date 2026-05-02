@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const score = localStorage.getItem('lastScore') || "0";
+    document.getElementById('final-score').innerText = score;
+    
+    const role = localStorage.getItem('userRole') || "Professional";
+    document.getElementById('display-role').innerText = role;
+});
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
