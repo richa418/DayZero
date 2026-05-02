@@ -414,3 +414,14 @@ if (res.ok) {
   }
 });
 }
+
+function selectRole(role) {
+    // 1. Save the role in the browser's memory
+    localStorage.setItem('userRole', role);
+    
+    // 2. Alert the user (optional)
+    alert("Role selected: " + role + ". Initializing your manager...");
+    
+    // 3. Send them to the dashboard
+    window.location.href = "dashboard.html";
+}
